@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Paula's Portfolio</title>
+  <style>
+      body {
+background-color: rgb(178, 197, 189);
+}
+h1 {
+  font-size: 5em;
+  color: #5c856f
+}
+p {
+  font-size: 1.2em;
+  padding-left: 100px;
+}
+h3{
+  font-size: 2.4em;
+  padding-left: 250px;
+  color:#5c856f
+}
+h4{
+  font-size:2em;
+  padding-left: 100px;
+}
+footer {
+  padding-bottom: 70px;
+}
+/* pam removed <style> */
+    article {
+      width: 600px;
+      padding: 20px 100px;
+    }
+
+    .accordion {
+      color: #025e93;
+      cursor: pointer;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
+    .active,
+    .accordion:hover {
+      color: #339999;
+    }
+
+    .panel {
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+ 
+
+
+<body>
+  <header class="page-5">
+    <a class="logo" href="index.html"><span>Portfolio</span></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="page-2.html">About Me</a>
+        </li>
+        <li>
+          <a href="page-3.html">Photography</a>
+        </li>
+        <li>
+          <a href="page-4.html">Digital Retouching</a>
+        </li>
+        <li class="active-page">
+          <a href="page-5.html">Graphic Design</a>
+        </li>
+        <li>
+          <a href="page-6.html">Tutorials</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="page-2.html">About Me</a>
+          <a href="page-3.html">Photography</a>
+          <a href="page-4.html">Digital Retouching</a>
+          <a class="active-menu-item" href="#">Graphic Design</a>
+          <a href="page-6.html">Tutorials</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <article>
+    <div>
+      <h1>Graphic Design Projects</h1>
+    </div>
+  </article>
+  <section style="padding: 40px">
+  </section>
+  <body>
+    <article>
+      <h3>Projects made for 'Professional Graphic Design' certificate program from UCBerkley Extension.</h3>
+      <div>
+        <h4>Posters</h4>
+        <p>
+          The first poster was made for my Photoshop class. We needed to create a new poster from our favorite movie.
+        </p>
+        <p>I chose the classic movie 'The Magic Of OZ', because it was a movie that marked my childhood.</p>
+        <p>I tried to add to the image the most important characters and place; unfortunatelly I didn't find a quality image from the wicked witch, which is my favorite character in the movie</p>
+        <br>
+        <p>The second poster was made for the same class, but the idea was to make an AD Campain for a product using some famous art</p>
+        <p>Again, I chose a Brazilian product called 'Havaianas'; this brand is famous worldwide for its sandals, but also sell hats and purses for the beach.</p>
+        <p>I chose some famous arts also from Brazilians Artists for the Campain.</p>
+        <div class="panel">
+          <img src="./assets/images/PosterOz_reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 100px;" />
+          <img src="./assets/images/graphicDesign-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;;" />
+        </div>
+        <div class="accordion" style="text-align: right; padding-right: 600px; font-size: 1.2em; text-decoration: underline;">Click to open Images</div>
+      </div>
+      <div>
+        <h4>Magazine Cover</h4>
+        <p>
+          The first magazine was made for my InDesign class. We needed to create a complete magazine with Cover and all the content and articles inside.</p>
+          <p>I chose to do a Turism related magazine with the intent of showing people a place in Brazil that is not very popular, but to me, it's a hidden Gem.
+        </p>
+        <p>The place is called Bonito, and it means beautiful in Portugues.</p>
+        <p>The cover is an image of it's water cave, and a mermaid is jumping in it. It was an image taken by a professional photographer to display in some kind of AD.</p>
+        <br>
+        <p>The second Magazine Cover was made for my Photoshop class; and you may recognize the image from my portfolio, because I used my own image for this cover.</p>
+        <p>This image has a special meaning to me, because my son was born at the first month of the pandemic, and it was the thoughest moment of my life.</p>
+        <p>Based on my motherhood experience, I chose the articles that are going in the cover, as I feel other women also struggle with the same thing.</p>
+        <div class="panel">
+          <img src="./assets/images/magazine-Tour-Reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 100px;" />
+          <img src="./assets/images/magazine_mother-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;;" />
+        </div>
+        <div class="accordion" style="text-align: right; padding-right: 600px; font-size: 1.2em; text-decoration: underline;">Click to open Images</div>
+      </div>
+    </article>
+  </body>
+  <!-- BEG JavaScript -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.previousElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+          this.innerHTML = "click to open Images";
+        } else {
+          panel.style.display = "block";
+          this.innerHTML = "Less";
+        }
+      });
+    }
+  </script>
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer>
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+
+</html>

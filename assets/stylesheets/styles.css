@@ -284,13 +284,29 @@ footer > div.social-icon {
   padding-bottom: 30px;
 }
 
+/* pam added begin */
+@media screen and (max-width: 1650px) {
+  nav {
+    /* padding: top right bottom left */
+    padding: 60px 0px 0px 200px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  nav {
+    /* padding: top right bottom left */
+    padding: 150px 0px 0px 20px;
+  }
+}
+/* pam added end */
+
 @media screen and (max-width: 750px) {
   /*header {
     height: 240px;
   }*/
   header a.logo {
     width: 120px;
-    height: 44px;
+    height: 100px; /* pam updated */
   }
   /*** for carousel area ***/
   section > div.carousel-area {
@@ -356,7 +372,6 @@ footer > div.social-icon {
     height: 270px;
   }
 
-  }
   .dropdown {
     display: block;
   }
@@ -366,5 +381,7 @@ footer > div.social-icon {
   aside > div > div.scrolling {
     height: 300px;
   }
+}
+  
 
 /********** END for dropdown menu in small screen **********/

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <title>Paula's Portfolio</title>
+  <style>
+    body {
+background-color: rgb(178, 197, 189);
+}
+h1 {
+  font-size: 5em;
+  color: #5c856f
+}
+p {
+  font-size: 2em;
+  padding-left: 100px;
+}
+footer {
+  padding-bottom: 70px;
+}
+  </style>
+</head>
+
+
+  <!-- loading jquery first, then lightbox -- 
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="assets/javascripts/lightbox.min.js"
+    ></script> 
+    -- loading jquery first, then lightbox -->
+
+  <!-- OR using lightbox combin with jquery script -->
+  <script type="text/JavaScript" src="assets/javascripts/lightbox-plus-jquery.min.js"></script>
+</body>
+<body>
+  <header class="page-4">
+    <a class="logo" href="index.html"><span>Portfolio</span></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="page-2.html">About Me</a>
+        </li>
+        <li>
+          <a href="page-3.html">Photography</a>
+        </li>
+        <li class="active-page">
+          <a href="page-4.html">Digital Retouching</a>
+        </li>
+        <li>
+          <a href="page-5.html">Graphic Design</a>
+        </li>
+        <li>
+          <a href="page-6.html">Tutorials</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <!-- pam updated -->
+          <a href="page-2.html">About Me</a>
+          <a href="page-3.html">Photography</a>
+          <a class="active-menu-item" href="#">Digital Retouching</a>
+          <a href="page-5.html">Graphic Design</a>
+          <a href="page-6.html">Tutorials</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <div>
+      <h1>Digital Retouching</h1>
+    </div>
+    <p>Click in the image to edit</p>
+  </article>
+  <body>
+    <head>
+      <style>
+      div.gallery {
+        margin: 5px;
+        border: 3px solid #ccc;
+        float: left;
+        width: 700px;
+        height:510px;
+        margin-left: 120px;
+      }
+      
+      div.gallery:hover {
+        border: 3px solid #c4f4e5;
+        margin-left: 120px;
+      }
+      
+      div.gallery img {
+        width: 694px;
+        height:444px;
+        
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+      }
+      
+      </style>
+      </head>
+      <body>
+        <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./assets/images/bolsa-after.jpeg" width="300" height="100">
+          <img src="./assets/images/bolsa_before.jpeg" alt="Product Retouch" width="600" height="400">
+        </a>
+        <div class="desc">Frequency Separation, to smooth surface without jeopardizing the texture, and liquify to reshape</div>
+      </div>
+      <div class="responsive"></div>
+      <div class="gallery">
+        <a target="_blank" href="./assets/images/sapato-final.jpeg">
+          <img src="./assets/images/sapato1.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Focus Stacking, to make focus reach all sides of the image</div>
+      </div>
+<br>
+      </body>
+      <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="./assets/images/cellphone-fixed.jpeg">
+          <img src="./assets/images/cellphone.jpeg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Mask and cloning</div>
+      </div>
+      <div class="responsive"></div>
+      <div class="gallery">
+        <a target="_blank" href="./assets/images/sapat-cor2.jpeg">
+          <img src="./assets/images/sapato-cor.jpeg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Product color change</div>
+      </div>
+      
+      </body>
+  <section style="padding: 40px">
+    
+  </section>
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer>
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
