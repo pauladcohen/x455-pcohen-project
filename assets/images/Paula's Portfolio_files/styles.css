@@ -40,9 +40,9 @@ header a.logo:hover {
 }
 
 nav {
-  
+  background-color: rgba(80, 94, 90, 0.6);
   padding: 20px 20px 20px 420px;
-  font-stretch:15px;
+  font-stretch:;
   font-size: 25px
   
 }
@@ -56,7 +56,7 @@ nav ul {
 }
 
 nav ul::after {
-  content:normal;
+  content: "";
   display: block;
   clear: both;
 }
@@ -75,13 +75,13 @@ nav ul li a {
 
 /* styling hover nav item */
 nav ul li a:hover {
-  background-color: #339988;
+  background-color: #339999;
   text-decoration: none;
   color: #fff;
 }
 
 .active-page {
-  background-color: rgba(115, 174, 159, 0.8);
+  background-color: rgba(135, 204, 204, 0.8);
 }
 
 .active-menu-item {
@@ -155,7 +155,6 @@ nav ul li a:hover {
   justify-content: right; /* for hero text */
   align-items: center; /* for hero text */
   z-index: -1;
- background-color: rgb(154, 193, 180);
 }
 .hero-text {
   color: #9bdfc6;
@@ -171,27 +170,33 @@ nav ul li a:hover {
     font-size: 2em;
     font-weight:200;
     font-style: normal;
-    margin-right: 40px;
+    margin-right: 40px; 300px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
   }
 
 /* END styling hero screen*/
 
 /* style page banner */
-
+header.page-2 {
+  background: rgb(65, 62, 62); url(./assets/images/aboutme-reduced.jpg); /* top center bottom - 1/3 of the image full height */
+  background-size: cover;
+  height: 400px;
  
 
 .Hello {
     font-size: 2em;
     font-weight:200;
     font-style: normal;
-    margin-right: 40px;
+    margin-right: 40px; 300px;
     
 
 }
 
-p {
-  font-size: 2em;
+header.page-3 {
+  id="myCarousel" class="carousel slide"
+    background: rgb(65, 62, 62);  /* top center bottom - 1/3 of the image full height */
+    background-size: cover;
+    height: 400px;
 }
 
 header.page-4 {
@@ -208,19 +213,21 @@ header.page-6 {
 
 /* BEG styling headings */
 h1 {
-  margin: 150px 0px 1em 600px;
-  color: #5c856f
+  margin: 150px 0px 1em 700px;
+  color: #076d6f;
+  font-size: 5em;
+  font-weight: bold;
 }
 h2 {
   margin: 150px 0px 1em 100px;
   color: #333b3b;
-  font-size: 1.9em;
+  font-size: 3em;
   font-weight: bold;
 }
 
 h3 {
   margin: 75px 0px 1.5em 45px;
-  color: #75bab8;
+  color: #282e2e;
   font-size: 1.8em;
   font-weight: normal;
   letter-spacing: 2px;
@@ -232,7 +239,6 @@ h3 {
 a {
   color: #00a2ff;
   text-decoration: none;
- 
 }
 
 /* BEG styling images */
@@ -264,10 +270,9 @@ img.size03 {
 
 .to-top {
   width: 100%;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   justify-content: center;
-  padding-top: 150px;
 }
 
 /* END styling images */
@@ -278,27 +283,10 @@ article > div {
 padding: 0px 40px 0px 40px;
 }
 footer > div.social-icon {
-  padding-top: 30px;
+  padding: 30px;
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
-
-/* pam added begin */
-@media screen and (max-width: 1650px) {
-  nav {
-    /* padding: top right bottom left */
-    padding: 60px 0px 0px 200px;
-  }
-}
-
-@media screen and (max-width: 1450px) {
-  nav {
-    /* padding: top right bottom left */
-    padding: 150px 0px 0px 20px;
-  }
-}
-/* pam added end */
 
 @media screen and (max-width: 750px) {
   /*header {
@@ -306,7 +294,7 @@ footer > div.social-icon {
   }*/
   header a.logo {
     width: 120px;
-    height: 100px; /* pam updated */
+    height: 44px;
   }
   /*** for carousel area ***/
   section > div.carousel-area {
@@ -327,7 +315,7 @@ footer > div.social-icon {
   article > div {
     margin: 0px 40px;
     /* padding: top right bottom left */
-    padding: 20px 100px 30px 0px;
+    padding: 0px 0px 30px 0px;
     border-right: none;
     border-bottom: 1px solid #555;
   }
@@ -369,9 +357,10 @@ footer > div.social-icon {
   header.food-page {
     background: rgb(45, 42, 42) url(../images/family-6-reduced.jpg) no-repeat center; /* top center bottom - 1/3 of the image full height */
     background-size: cover;
-    height: 270px;
+    height: 170px;
   }
 
+  }
   .dropdown {
     display: block;
   }
@@ -382,6 +371,4 @@ footer > div.social-icon {
     height: 300px;
   }
 }
-  
-
 /********** END for dropdown menu in small screen **********/

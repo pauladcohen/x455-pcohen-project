@@ -27,13 +27,12 @@ h3{
 h4{
   font-size:2em;
   padding-left: 100px;
-  padding-top: 100px;
 }
 footer {
   padding-bottom: 70px;
 }
-
-  article {
+/* pam removed <style> */
+    article {
       width: 600px;
       padding: 20px 100px;
     }
@@ -45,7 +44,7 @@ footer {
       padding-bottom: 10px;
     }
 
-    .active, 
+    .active,
     .accordion:hover {
       color: #339999;
     }
@@ -87,7 +86,7 @@ footer {
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <a href="index.html">Home</a>
-          <a href="food.html">About Me</a>
+          <a href="page-2.html">About Me</a>
           <a href="page-3.html">Photography</a>
           <a href="page-4.html">Digital Retouching</a>
           <a class="active-menu-item" href="#">Graphic Design</a>
@@ -105,7 +104,7 @@ footer {
   </article>
   <section style="padding: 40px">
   </section>
-
+  <body>
     <article>
       <h3>Projects made for 'Professional Graphic Design' certificate program from UCBerkley Extension.</h3>
       <div>
@@ -120,18 +119,16 @@ footer {
         <p>Again, I chose a Brazilian product called 'Havaianas'; this brand is famous worldwide for its sandals, but also sell hats and purses for the beach.</p>
         <p>I chose some famous arts also from Brazilians Artists for the Campain.</p>
         <div class="panel">
-          <!-- ***<img src="./assets/images/PosterOz_reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 100px;" />
-          <img src="./assets/images/graphicDesign-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;" /> -->
-          ***<img src="./assets/images/PosterOz_reduced.jpeg" alt="Lemon & Lime" style="width:50%;" />
-          <img src="./assets/images/graphicDesign-reduced.jpeg" alt="Lemon & Lime" style="width:50%;" />
+          <img src="./assets/images/PosterOz_reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 100px;" />
+          <img src="./assets/images/graphicDesign-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;;" />
         </div>
-        <div class="accordion" style="text-align: right; padding-right: 400px; font-size: 1.2em; text-decoration: underline;">More</div>
+        <div class="accordion" style="text-align: right; padding-right: 600px; font-size: 1.2em; text-decoration: underline;">Click to open Images</div>
       </div>
       <div>
         <h4>Magazine Cover</h4>
         <p>
-          The first magazine was made for my InDesign class. We needed to create a complete magazine with Cover and all the content and articles inside.
-          I chose to do a Turism related magazine with the intent of showing people a place in Brazil that is not very popular, but to me, it's a hidden Gem.
+          The first magazine was made for my InDesign class. We needed to create a complete magazine with Cover and all the content and articles inside.</p>
+          <p>I chose to do a Turism related magazine with the intent of showing people a place in Brazil that is not very popular, but to me, it's a hidden Gem.
         </p>
         <p>The place is called Bonito, and it means beautiful in Portugues.</p>
         <p>The cover is an image of it's water cave, and a mermaid is jumping in it. It was an image taken by a professional photographer to display in some kind of AD.</p>
@@ -141,9 +138,9 @@ footer {
         <p>Based on my motherhood experience, I chose the articles that are going in the cover, as I feel other women also struggle with the same thing.</p>
         <div class="panel">
           <img src="./assets/images/magazine-Tour-Reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 100px;" />
-          <img src="./assets/images/magazine_mother-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;" />
+          <img src="./assets/images/magazine_mother-reduced.jpeg" alt="Lemon & Lime" style="width:50%; padding-left: 350px; padding-top: 50px;;" />
         </div>
-        <div class="accordion" style="text-align: right; padding-right: 400px; font-size: 1.2em; text-decoration: underline;">More</div>
+        <div class="accordion" style="text-align: right; padding-right: 600px; font-size: 1.2em; text-decoration: underline;">Click to open Images</div>
       </div>
     </article>
   </body>
@@ -157,7 +154,7 @@ footer {
         var panel = this.previousElementSibling;
         if (panel.style.display === "block") {
           panel.style.display = "none";
-          this.innerHTML = "More";
+          this.innerHTML = "click to open Images";
         } else {
           panel.style.display = "block";
           this.innerHTML = "Less";
@@ -182,6 +179,6 @@ footer {
       <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
     </div>
   </footer>
-
+</body>
 
 </html>
